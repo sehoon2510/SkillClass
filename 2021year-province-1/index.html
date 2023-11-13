@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./common/css/style.css">
+    <link rel="stylesheet" href="./common/fontawesome/css/font-awesome.css">
+    <link rel="stylesheet" href="./lib/jquery-3.4.1.min.js">
+</head>
+<body>
+    <div class="container">
+        <input type="radio" name="slide" id="slide1-1" class="btn left image1 move1">
+        <input type="radio" name="slide" id="slide2-1" class="btn left image2 move2">
+        <input type="radio" name="slide" id="slide3-1" class="btn left image3 move3">
+        <input type="radio" name="slide" id="slide1-2" class="btn center image1 move1">
+        <input type="radio" name="slide" id="slide2-2" class="btn center image2 move2">
+        <input type="radio" name="slide" id="slide3-2" class="btn center image3 move3">
+        <input type="radio" name="slide" id="slide1-3" class="btn right image1 move1">
+        <input type="radio" name="slide" id="slide2-3" class="btn right image2 move2">
+        <input type="radio" name="slide" id="slide3-3" class="btn right image3 move3">
+        <header>
+            <div class="row d-flex justify-content-between align-items-center">
+                <div class="header__inner d-flex justify-content-between align-items-center">
+                    <a href="./" class="logo">무형문화재관리원</a>
+                    <div class="nav">
+                        <div class="icon"><i class="fa fa-bars"></i></div>
+                        <div class="nav__item d-flex justify-content-center">
+                            <a href="#">무형문화재관리원</a>
+                            <div class="d-flex flex-column align-items-center">
+                                <a href="#">소개</a>
+                                <a href="#">일반현황</a>
+                                <a href="#" class="sub">▶ 설립목적</a>
+                                <a href="./Bsub1.html" class="sub">▶ 연혁</a>
+                                <a href="#" class="sub">▶ 역할</a>
+                                <a href="#">주요업무계획</a>
+                                <a href="#">조직 및 구성</a>
+                                <a href="./Bsub2.html">전화번호</a>
+                            </div>
+                        </div>
+                        <div class="nav__item d-flex justify-content-center">
+                            <a href="./sub1.html">무형문화재 현황</a>
+                            <div class="d-flex flex-column align-items-center">
+                                <a href="#">전통 공연·예술</a>
+                                <a href="#">전통기술</a>
+                                <a href="#">전통지식</a>
+                                <a href="#">구전 전통 및 표현</a>
+                                <a href="#">전통 생활관습</a>
+                                <a href="#">의례·의식</a>
+                                <a href="#">전통 놀이·무예</a>
+                                <a href="#">전체 현황</a>
+                            </div>
+                        </div>
+                        <div class="nav__item d-flex justify-content-center">
+                            <a href="#">행사 안내</a>
+                            <div class="d-flex flex-column align-items-center">
+                                <a href="#">공연</a>
+                                <a href="./sub2.html" class="sub">▶ 월간 공연 일정</a>
+                                <a href="#" class="sub">▶ 연간 공연 일정</a>
+                                <a href="#">전시</a>
+                                <a href="#" class="sub">▶ 관람 안내</a>
+                                <a href="#" class="sub">▶ 전시실</a>
+                                <a href="#" class="sub">▶ 디지털 체험관</a>
+                                <a href="#" class="sub">▶ 기획 전시실</a>
+                                <a href="#">교육</a>
+                                <a href="#" class="sub">▶ 전문 교육</a>
+                                <a href="#" class="sub">▶ 사회 교육</a>
+                                <a href="#" class="sub">▶ 연간 교육일정</a>
+                            </div>
+                        </div>
+                        <div class="nav__item d-flex justify-content-center">
+                            <a href="#">전승지원</a>
+                            <div class="d-flex flex-column align-items-center">
+                                <a href="#">공방</a>
+                                <a href="#">공예품 갤러리</a>
+                                <a href="#">전수교육관 현황</a>
+                            </div>
+                        </div>
+                        <div class="nav__item d-flex justify-content-center">
+                            <a href="#">공개 데이터</a>
+                            <div class="d-flex flex-column align-items-center">
+                                <a href="#">무형문화재 현황 조회</a>
+                                <a href="#">공연 일정 조회</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav__back"></div>
+                </div>
+                <div class="header__inner d-flex justify-content-between align-items-center">
+                    <ul class="d-flex ui">
+                        <li class="m">회원가입</li>
+                        <li class="m">로그인</li>
+                        <li class="m">문의하기</li>
+                    </ul>
+                    <p>|</p>
+                    <select class="language">
+                        <option>한국어</option>
+                        <option>English</option>
+                        <option>中文(简体)</option>
+                        <option>日本語</option>
+                    </select>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="visual">
+                <ul>
+                    <li>
+                        <img src="./image/silde/01_세계유산_화성.jpg" alt="slide1-1">
+                        <div class="text d-flex flex-column align-items-center justify-content-center flex-wrap">
+                            <p>무형유산 디지털 체험관 개관 </p>
+                            <p>-놀이한마당(AI,VR 체험)</p>
+                            <p>-아름다운 향연(포토존)</p>
+                            <div></div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./image/silde/02.01.무형유산 디지털 체험관.jpg" alt="slide1-2">
+                        <div class="text d-flex flex-column align-items-center justify-content-center flex-wrap">
+                            <p>씨름, 분단을 넘어 세계를 잇다!</p>
+                            <p>유네스코 인류무형유산 등재 기념 특별전</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./image/silde/02.02.씨름.jpg" alt="slide1-3">
+                        <div class="text d-flex flex-column align-items-center justify-content-center flex-wrap">
+                            <p>무형유산 유튜브 영상 공모전</p>
+                            <p>본선 진출작 발표</p>
+                            <p>본선 작품 상영 및 시상식 : 4월 30일(일) 무형문화재관리원</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="box">
+                    <label for="" class="btn left image1 move1"><div class="btn"></div></label>
+                    <label for="slide2-1" class="btn left image2 move2"><div class="btn"></div></label>
+                    <label for="slide3-1" class="btn left image3 move3"><div class="btn"></div></label>
+                    <label for="slide1-2" class="btn center image1 move1"><div class="btn"></div></label>
+                    <label for="" class="btn center image2 move2"><div class="btn"></div></label>
+                    <label for="slide3-2" class="btn center image3 move3"><div class="btn"></div></label>
+                    <label for="slide1-3" class="btn right image1 move1"><div class="btn"></div></label>
+                    <label for="slide2-3" class="btn right image2 move2"><div class="btn"></div></label>
+                    <label for="" class="btn right image3 move3"><div class="btn"></div></label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="section__title d-flex flex-column align-items-center">
+                    <h3 class="t">NEWS</h3>
+                    <p class="m">늘 새로운 이야기</p>
+                </div>
+                <div class="section__inner news d-flex flex-wrap">
+                    <input type="radio" name="news" id="news-1" class="tab" checked>
+                    <input type="radio" name="news" id="news-2" class="tab">
+                    <input type="radio" name="news" id="news-3" class="tab">
+                    <input type="radio" name="news" id="news-4" class="tab">
+                    <div class="div-tab d-flex justify-content-around align-items-center">
+                        <p class="m-bd">탭</p>
+                        <div class="tabs d-flex flex-column flex-wrap">
+                            <label for="news-1" class="m news-1">공지사항</label>
+                            <label for="news-2" class="m news-2">보도자료</label>
+                            <label for="news-3" class="m news-3">채용공고</label>
+                            <label for="news-4" class="m news-4">입찰정보</label>
+                        </div>
+                    </div>  
+                    <div class="contents">
+                        <div>
+                            <p class="m-bd news-1">공지사항</p>
+                            <p class="m-bd news-2">보도자료</p>
+                            <p class="m-bd news-3">채용공고</p>
+                            <p class="m-bd news-4">입찰정보</p>
+                        </div>
+                        <ul class="list news-1">
+                            <li>
+                                <div class="news__title">
+                                    <p class="m">제목: 『국립문화재연구소 연구윤리에 관한 규정』 전부개정(안) 행정예고</p>
+                                </div>
+                                <div class="news__content">
+                                    <p class="m">작성일: 2020-05-12</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="news__title">
+                                    <p class="m">제목: 2020년 지역문화유산 활용 전문인력 교육(야행) 안내</p>
+                                </div>
+                                <div class="news__content">
+                                    <p class="m">작성일: 2020-05-07</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="news__title">
+                                    <p class="m">제목: 2020년도 『청년 유네스코 세계유산 지킴이』모집 안내</p>
+                                </div>
+                                <div class="news__content">
+                                    <p class="m">작성일: 2020-04-27</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="list news-2">
+                            <li>
+                                <div class="news__title">
+                                    <p class="m">제목: 국립무형유산원, 제2 상설전시실 재개관과 무형유산 디지털 체험관 개관</p>
+                                </div>
+                                <div class="news__content">
+                                    <p class="m">작성일: 2020-05-06</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="news__title">
+                                    <p class="m">제목: 문화재청 소관 실내관람시설 6일(수)부터 재개관</p>
+                                </div>
+                                <div class="news__content">
+                                    <p class="m">작성일: 2020-05-01</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="news__title">
+                                    <p class="m">제목: ‘씨름’특집 다큐멘터리, 제53회 휴스턴 국제영화제 금상 수상</p>
+                                </div>
+                                <div class="news__content">
+                                    <p class="m">작성일: 2020-04-28</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="news__title">
+                                    <p class="m">제목: 국립고궁박물관·궁능 실내 관람시설 등 휴관 추가 연장</p>
+                                </div>
+                                <div class="news__content">
+                                    <p class="m">작성일: 2020-04-23</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="news__title">
+                                    <p class="m">제목: 문화재청, 궁중문화축전ㆍ종묘대제 하반기 개최</p>
+                                </div>
+                                <div class="news__content">
+                                    <p class="m">작성일: 2020-04-13</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="list news-3">
+                            <li>
+                                <div class="news__title">
+                                    <p class="m">진행중인 채용정보가 없습니다.</p>
+                                </div>
+                                <div class="news__content">
+                                    <p class="m"></p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="list news-4">
+                            <li>
+                                <div class="news__title">
+                                    <p class="m">제목: 전통무용 분야 종목의 국가무형문화재 지정을 위한 기초조사 연구용역</p>
+                                </div>
+                                <div class="news__content">
+                                    <p class="m">구분: 용역</p>
+                                    <p class="m">작성일: 2020-05-01</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="news__title">
+                                    <p class="m">제목: 무형문화재관리원 전산실 스토리지 용량 증설 관련 물품구매</p>
+                                </div>
+                                <div class="news__content">
+                                    <p class="m">구분: 물품구매</p>
+                                    <p class="m">작성일: 2020-04-30</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="news__title">
+                                    <p class="m">제목: 무형문화재관리원 주차장 증측 공사</p>
+                                </div>
+                                <div class="news__content">
+                                    <p class="m">구분: 공사</p>
+                                    <p class="m">작성일: 2020-04-21</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="news__title">
+                                    <p class="m">제목: 2020년 전수교육관 활성화 사업 모니터링 용역</p>
+                                </div>
+                                <div class="news__content">
+                                    <p class="m">구분: 용역</p>
+                                    <p class="m">작성일: 2020-04-20</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="news__title">
+                                    <p class="m">제목: 세계유산 영향평가 도입방안 연구</p>
+                                </div>
+                                <div class="news__content">
+                                    <p class="m">구분: 용역</p>
+                                    <p class="m">작성일: 2020-04-20</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="section__title d-flex flex-column align-items-center">
+                    <h3 class="t">POPUP</h3>
+                    <p class="m">팝업존</p>
+                </div>
+                <div class="section__inner popups">
+                    <ul class="d-flex flex-wrap justify-content-between">
+                        <li>
+                            <div class="hover d-flex flex-column align-items-center">
+                                <p class="m-bd">무형문화재관리원 공연 중지 안내</p>
+                                <p class="m">공연장 증축 공사로 인해 2021년 7월 부터<br>현장 공연은 진행하지 않습니다.</p>
+                                <p class="m">향후 공연일정은 증축공사 준공 시기에 따라<br>변동될 수 있습니다.</p>
+                            </div>
+                            <img src="./image/popup/01_세계유산_화성.jpg" alt="popup-img1">
+                        </li>
+                        <li>
+                            <div class="hover d-flex flex-column align-items-center">
+                                <p class="m-bd">국민의 기대 그이상!</p>
+                                <p class="m">적극행정 울림</p>
+                                <p class="m">인사혁신처</p>
+                            </div>
+                            <img src="./image/popup/01_세계유산_화성.jpg" alt="popup-img1">
+                        </li>
+                        <li>
+                            <div class="hover d-flex flex-column align-items-center">
+                                <p class="m-bd">내 삶을 바꾸는 정책참여</p>
+                                <p class="m">정책참여플랫폼</p>
+                                <p class="m">국민생각함</p>
+                                <p class="m">국민권익위원회</p>
+                            </div>
+                            <img src="./image/popup/01_세계유산_화성.jpg" alt="popup-img1">
+                        </li>
+                        <li>
+                            <div class="hover d-flex flex-column align-items-center">
+                                <p class="m-bd">문화재를 지키는 또 하나의방법</p>
+                                <p class="m">문화재 훼손신소: 1661-9112</p>
+                                <p class="m">도난ㆍ도굴신고: 080-290-8000</p>
+                            </div>
+                            <img src="./image/popup/01_세계유산_화성.jpg" alt="popup-img1">
+                        </li>
+                    </ul>
+                </div>
+                <div class="section__title d-flex flex-column align-items-center">
+                    <h3 class="t">EVENT</h3>
+                    <p class="m">즐거운 행사</p>
+                </div>
+                <div class="section__inner events">
+                    <ul class="list d-flex flex-wrap justify-content-between">
+                        <li class="d-flex flex-column">
+                            <div class="card__title d-flex justify-content-center">
+                                <p class="m-bd">문화가 있는 날1 - 신노이</p>
+                            </div>
+                            <div class="card__content">
+                                <p class="m">종류: 공연</p>
+                                <p class="m">장소: 얼쑤마루 대공연장</p>
+                                <p class="m">일시: 2021년 5월 27일 D-14</p>
+                            </div>
+                            <div class="card__btn">
+                                <button>상세내용보기</button>
+                            </div>
+                        </li>
+                        <li class="d-flex flex-column">
+                            <div class="card__title d-flex justify-content-center">
+                                <p class="m-bd">탈놀이, 신명에 실어 시름을 날리다 특별전</p>
+                            </div>
+                            <div class="card__content">
+                                <p class="m">종류: 전시</p>
+                                <p class="m">장소: 상설전시실1</p>
+                                <p class="m">일시: 2021년 5월 27일 ~</p>
+                            </div>
+                            <div class="card__btn">
+                                <button>상세내용보기</button>
+                            </div>
+                        </li>
+                        <li class="d-flex flex-column">
+                            <div class="card__title d-flex justify-content-center">
+                                <p class="m-bd">문화가 있는 날2 - 국한유래 무형유산 공연</p>
+                            </div>
+                            <div class="card__content">
+                                <p class="m">종류: 공연</p>
+                                <p class="m">장소: 얼쑤마루 대공연장</p>
+                                <p class="m">일시: 2021년 5월 24일 D-11</p>
+                            </div>
+                            <div class="card__btn">
+                                <button>상세내용보기</button>
+                            </div>
+                        </li>
+                        <li class="d-flex flex-column">
+                            <div class="card__title d-flex justify-content-center">
+                                <p class="m-bd">유네스코 인류무형유산<br>등재 기념 특별전, 씨름</p>
+                            </div>
+                            <div class="card__content">
+                                <p class="m">종류: 전시</p>
+                                <p class="m">장소: 기획전시실</p>
+                                <p class="m">일시: 2021년 4월 1일 ~</p>
+                            </div>
+                            <div class="card__btn">
+                                <button>상세내용보기</button>
+                            </div>
+                        </li>
+                        <li class="d-flex flex-column">
+                            <div class="card__title d-flex justify-content-center">
+                                <p class="m-bd">전통예능 갈래</p>
+                            </div>
+                            <div class="card__content">
+                                <p class="m">종류: 공연</p>
+                                <p class="m">장소: 얼쑤마루 대공연장</p>
+                                <p class="m">일시: 2021년 7월 11일 D-59</p>
+                            </div>
+                            <div class="card__btn">
+                                <button>상세내용보기</button>
+                            </div>
+                        </li>
+                        <li class="d-flex flex-column">
+                            <div class="card__title d-flex justify-content-center">
+                                <p class="m-bd">장인의 손길, 일상을 꾸미다 특별전</p>
+                            </div>
+                            <div class="card__content">
+                                <p class="m">종류: 전시</p>
+                                <p class="m">장소: 기획전시실</p>
+                                <p class="m">일시: 2020년 6월 30일 ~</p>
+                            </div>
+                            <div class="card__btn">
+                                <button>상세내용보기</button>
+                            </div>
+                        </li>
+                        <li class="d-flex flex-column">
+                            <div class="card__title d-flex justify-content-center">
+                                <p class="m-bd">2019 국립무형유산원 무형유산 체험교육</p>
+                            </div>
+                            <div class="card__content">
+                                <p class="m">종류: 교육</p>
+                                <p class="m">장소: 전승마루 공예전승실1</p>
+                                <p class="m">일시: 매주 토/일요일</p>
+                            </div>
+                            <div class="card__btn">
+                                <button>상세내용보기</button>
+                            </div>
+                        </li>
+                        <li class="d-flex flex-column">
+                            <div class="card__title d-flex justify-content-center">
+                                <p class="m-bd">문화가 있는 날3 - 신박서클</p>
+                            </div>
+                            <div class="card__content">
+                                <p class="m">종류: 공연</p>
+                                <p class="m">장소: 얼쑤마루 대공연장</p>
+                                <p class="m">일시: 2021년 7월 29일 D-77</p>
+                            </div>
+                            <div class="card__btn">
+                                <button>상세내용보기</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="section__title d-flex flex-column align-items-center">
+                    <h3 class="t">INTANGIBLE HERITAGE</h3>
+                    <p class="m">한국의 무형유산</p>
+                </div>
+                <div class="section__inner year d-flex flex-wrap">
+                    <input type="radio" name="years" id="years-1" class="year" checked>
+                    <input type="radio" name="years" id="years-2" class="year">
+                    <input type="radio" name="years" id="years-3" class="year">
+                    <input type="radio" name="years" id="years-4" class="year">
+                    <input type="radio" name="years" id="years-5" class="year">
+                    <input type="radio" name="years" id="years-6" class="year">
+                    <input type="radio" name="years" id="years-7" class="year">
+                    <input type="radio" name="years" id="years-8" class="year">
+                    <input type="radio" name="years" id="years-9" class="year">
+                    <input type="radio" name="years" id="years-10" class="year">
+                    <input type="radio" name="years" id="years-11" class="year">
+                    <input type="radio" name="years" id="years-12" class="year">
+                    <div class="div-tab d-flex justify-content-around align-items-center">
+                        <p class="m-bd">탭</p>
+                        <div class="tabs d-flex flex-column flex-wrap">
+                            <label for="years-1" class="m years-1">2001년</label>
+                            <label for="years-2" class="m years-2">2003년</label>
+                            <label for="years-3" class="m years-3">2005년</label>
+                            <label for="years-4" class="m years-4">2009년</label>
+                            <label for="years-5" class="m years-5">2010년</label>
+                            <label for="years-6" class="m years-6">2011년</label>
+                            <label for="years-7" class="m years-7">2012년</label>
+                            <label for="years-8" class="m years-8">2013년</label>
+                            <label for="years-9" class="m years-9">2014년</label>
+                            <label for="years-10" class="m years-10">2015년</label>
+                            <label for="years-11" class="m years-11">2016년</label>
+                            <label for="years-12" class="m years-12">2018년</label>
+                        </div>
+                    </div>  
+                    <div class="contents">
+                        <div>
+                            <p class="m-bd years-1">2001년</p>
+                            <p class="m-bd years-2">2003년</p>
+                            <p class="m-bd years-3">2005년</p>
+                            <p class="m-bd years-4">2009년</p>
+                            <p class="m-bd years-5">2010년</p>
+                            <p class="m-bd years-6">2011년</p>
+                            <p class="m-bd years-7">2012년</p>
+                            <p class="m-bd years-8">2013년</p>
+                            <p class="m-bd years-9">2014년</p>
+                            <p class="m-bd years-10">2015년</p>
+                            <p class="m-bd years-11">2016년</p>
+                            <p class="m-bd years-12">2018년</p>
+                        </div>
+                        <ul class="list years-1 flex-wrap">
+                            <li>
+                                <p class="m">종묘제례 및 종묘 제례악 (2001년)</p>
+                            </li>
+                        </ul>
+                        <ul class="list years-2 flex-wrap">
+                            <li>
+                                <p class="m">판소리 (2003년)</p>
+                            </li>
+                        </ul>
+                        <ul class="list years-3 flex-wrap">
+                            <li>
+                                <p class="m">강릉단오제 (2005년)</p>
+                            </li>
+                        </ul>
+                        <ul class="list years-4 flex-wrap">
+                            <li>
+                                <p class="m">강강술래 (2009년)</p>
+                            </li>
+                            <li>
+                                <p class="m">남사당놀이 (2009년)</p>
+                            </li>
+                            <li>
+                                <p class="m">영산재 (2009년)</p>
+                            </li>
+                            <li>
+                                <p class="m">제주칠머리당 영등굿(2009년)</p>
+                            </li>
+                            <li>
+                                <p class="m">처용무 (2009년)</p>
+                            </li>
+                        </ul>
+                        <ul class="list years-5 flex-wrap">
+                            <li>
+                                <p class="m">가곡 (2010년)</p>
+                            </li>
+                            <li>
+                                <p class="m">대목장 (2010년)</p>
+                            </li>
+                            <li>
+                                <p class="m">매사냥 (2010년)</p>
+                            </li>
+                        </ul>
+                        <ul class="list years-6 flex-wrap">
+                            <li>
+                                <p class="m">줄타기 (2011년)</p>
+                            </li>
+                            <li>
+                                <p class="m">택견 (2011년)</p>
+                            </li>
+                            <li>
+                                <p class="m">한산모시짜기 (2011년)</p>
+                            </li>
+                        </ul>
+                        <ul class="list years-7 flex-wrap">
+                            <li>
+                                <p class="m">아리랑 (2012년)</p>
+                            </li>
+                        </ul>
+                        <ul class="list years-8 flex-wrap">
+                            <li>
+                                <p class="m">김장문화 (2013년)</p>
+                            </li>
+                        </ul>
+                        <ul class="list years-9 flex-wrap">
+                            <li>
+                                <p class="m">농악 (2014년)</p>
+                            </li>
+                        </ul>
+                        <ul class="list years-10 flex-wrap">
+                            <li>
+                                <p class="m">줄다리기 (2015년)</p>
+                            </li>
+                        </ul>
+                        <ul class="list years-11 flex-wrap">
+                            <li>
+                                <p class="m">제주해녀문화 (2016년)</p>
+                            </li>
+                        </ul>
+                        <ul class="list years-12 flex-wrap">
+                            <li>
+                                <p class="m">씨름(2018년)</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="section__inner banner">
+                    <ul class="d-flex">
+                        <li>
+                            <a href="http://www.nfm.go.kr/"><img src="./image/banner/07.07.국립민속박물관.png" alt="banner"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.cha.go.kr/"><img src="./image/banner/07.01.문화재청.png" alt="banner"></a>
+                        </li>
+                        <li>
+                            <a href="http://www.chf.or.kr/"><img src="./image/banner/07.03.한국문화재재단.png" alt="banner"></a>
+                        </li>
+                        <li>
+                            <a href="http://www.gugak.go.kr/"><img src="./image/banner/07.04.국립국악원.png" alt="banner"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.ntok.go.kr/"><img src="./image/banner/07.05.국립극장.png" alt="banner"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.arko.or.kr/"><img src="./image/banner/07.06.한국문화예술위원회.png" alt="banner"></a>
+                        </li>
+                        <li>
+                            <a href="http://www.nfm.go.kr/"><img src="./image/banner/07.07.국립민속박물관.png" alt="banner"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.ichcap.org/"><img src="./image/banner/07.08.유네스코아태무형유산센터.png" alt="banner"></a>
+                        </li>
+                        <li>
+                            <a href="http://www.koreamusic.org/"><img src="./image/banner/07.09.한국전통소리문화.png" alt="banner"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.cha.go.kr/"><img src="./image/banner/07.01.문화재청.png" alt="banner"></a>
+                        </li>
+                        <li>
+                            <a href="http://www.chf.or.kr/"><img src="./image/banner/07.03.한국문화재재단.png" alt="banner"></a>
+                        </li>
+                        <li>
+                            <a href="http://www.gugak.go.kr/"><img src="./image/banner/07.04.국립국악원.png" alt="banner"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.ntok.go.kr/"><img src="./image/banner/07.05.국립극장.png" alt="banner"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.arko.or.kr/"><img src="./image/banner/07.06.한국문화예술위원회.png" alt="banner"></a>
+                        </li>
+                        <li>
+                            <a href="http://www.nfm.go.kr/"><img src="./image/banner/07.07.국립민속박물관.png" alt="banner"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.ichcap.org/"><img src="./image/banner/07.08.유네스코아태무형유산센터.png" alt="banner"></a>
+                        </li>
+                        <li>
+                            <a href="http://www.koreamusic.org/"><img src="./image/banner/07.09.한국전통소리문화.png" alt="banner"></a>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="row">
+                <div class="footer__inner d-flex flex-wrap">
+                    <p class="m">이용안내</p>
+                    <p>|</p>
+                    <p class="m">개인정보 처리방침</p>
+                    <p>|</p>
+                    <p class="m">저작권 보호정책</p>
+                    <p>|</p>
+                    <p class="m">도로명 주소안내</p>
+                    <p>|</p>
+                    <p class="m">사이트오류 신고</p>
+                </div>
+                <div class="footer__inner">
+                    <p class="m">인천시 부평구 무네미로 448번길 77 한국산업인력공단 글로벌숙련기술진흥원</p>
+                    <p>COPYRIGHTⓒ 2016 HRDKOREA</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
