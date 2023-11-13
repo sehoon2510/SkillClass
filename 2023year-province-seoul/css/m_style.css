@@ -1,0 +1,718 @@
+@font-face {
+    font-family: 'n-bold';
+    src: url(./Noto_Sans_KR/NotoSansKR-Bold.otf);
+}
+@font-face {
+    font-family: 'n-regular';
+    src: url(./Noto_Sans_KR/NotoSansKR-Regular.otf);
+}
+@font-face {
+    font-family: 'n-medium';
+    src: url(./Noto_Sans_KR/NotoSansKR-Medium.otf);
+}
+@font-face {
+    font-family: 'm-bold';
+    src: url(./GmarketSansTTF/GmarketSansTTFBold.ttf);
+}
+@font-face {
+    font-family: 't-bold';
+    src: url(./TIMESBD.TTF);
+}
+
+.n-bold {
+    font-family: n-bold;
+}
+
+.m-bold {
+    font-family: m-bold;
+}
+
+.t-bold {
+    font-family: t-bold;
+}
+
+.n-regular {
+    font-family: n-regular;
+}
+
+.n-medium {
+    font-family: n-medium;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    width: 1280px; /* 1920 - 640 = 320 * 2 */
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+input {
+    display: none;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+  /* @media (min-width: 769px) and (max-width: 1024px) { */
+    /* 화면 너비가 769px 이상 1024px 이하일 때 적용되는 스타일 */
+    /* section {
+      font-size: 24px;
+    } */
+  /* } */
+
+@media (min-width: 1025px) {
+    /* 화면 너비가 1025px 이상일 때 적용되는 스타일 */
+    
+}
+
+.container {
+    width: 1920px;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+    /* background-color: black; */
+}
+
+header {
+    width: 100%;
+    height: 150px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    box-sizing: border-box;
+    /* border-bottom: 1px solid #e9e9e9; */
+    z-index: 5;
+}
+
+header > .row {
+    margin-left: 320px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > .row > a {
+    width: 213px;
+    height: 100px;
+    overflow: hidden;
+}
+
+header a img {
+    height: 90px;
+    margin-top: 10px;
+}
+
+header > .row > div {
+    width: 875px;
+    height: 100px;
+    /* background-color: #ccc; */
+}
+
+header nav {
+    width: 460px;
+    height: 100px;
+}
+
+header nav ul {
+    width: 460px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header .Mopen {
+    display: none;
+}
+
+header .menu {
+    width: 100vw;
+    height: 50px;
+    background-color: #e0e0e0;
+    box-sizing: border-box;
+    border-top: 1px solid #e0e0e0;
+    position: relative;
+}
+
+header .menu > ul {
+    width: 1280px;
+    height: 50px;
+    position: absolute;
+    left: 320px;
+    z-index: 1;
+
+    display: flex;
+
+    overflow: hidden;
+
+    transition: all 0.3s;
+}
+
+header .menu > ul > li {
+    width: 140px;
+    height: 50px;
+    position: relative;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.2s;
+    overflow: hidden;
+}
+
+header .menu > ul > li > a {
+    width: 140px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .menu > ul > li > ul {
+    width: 1280px;
+    height: 0px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s;
+    overflow: hidden;
+}
+
+header .menu > ul > li:nth-child(2) > ul {
+    left: -140px;
+}
+
+header .menu > ul > li:nth-child(3) > ul {
+    left: -280px;
+}
+
+header .menu > ul > li:nth-child(4) > ul {
+    left: -420px;
+}
+
+header .menu > ul > li:nth-child(5) > ul {
+    left: -560px;
+}
+
+header .menu > ul > li > ul > li {
+    width: 420px;
+    height: 50px;
+}
+
+header .menu > ul > li > ul > li > ul {
+    width: 420px;
+    height: 50px;
+    display: flex;
+}
+
+header .menu > ul > li > ul > li > ul > li {
+    width: 140px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* margin-top: 10px; */
+}
+
+/* header .menu ul ul li:nth-child(2) {
+    align-self: center;
+} */
+
+header .menu > ul > li > ul > li > ul > li a {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* header .menu ul ul li:first-child {
+    margin-top: 10px;
+} */
+
+header .menu .dpeth2 {
+    width: 100%;
+    height: 0px;
+    background-color: white;
+    position: absolute;
+    left: 0; 
+    top: 0;
+    display: flex;
+    align-items: flex-end;
+    z-index: 0;
+    transition: all 0.3s;
+    overflow: hidden;
+}
+
+header .menu .dpeth2 div {
+    width: 0px;
+    height: 50px;
+    background-color: #e0e0e0;
+    transition: all 0.3s 0.3s;
+}
+
+header .menu > ul:hover {
+    height: 150px;
+}
+
+header .menu > ul:hover ~ .dpeth2 {
+    height: 150px;
+}
+
+header .menu > ul:hover ~ .dpeth2 > div {
+    width: 1920px;
+}
+
+header .menu > ul > li:hover {
+    height: 150px;
+    overflow: initial;
+}
+
+header .menu > ul > li:hover > ul {
+    height: 100px;
+}
+
+section {
+    width: 100%;
+    margin-top: 150px;
+    background-color: #33333362;
+}
+
+section .slide {
+    width: 100%;
+    height: 700px;
+    background-color: black;
+}
+/* -155.7px */
+.test {
+    width: 491.63px;
+    height: 900px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: red;
+    z-index: 5;
+}
+
+.content {
+    width: 100%;
+    height: 500px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    overflow: hidden;
+}
+
+.title {
+    width: 100%;
+    height: 50px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content.board .board {
+    width: calc((427.5px * 5) + 32.065px + 21.375px);
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    transition: all 0.3s;
+}
+
+.content.board .board li {
+    width: 427.5px;
+    height: 261px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 427.5 261 */
+
+.content.board .board li div{
+    width: 475px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 17px;
+    background-color: white;
+    box-shadow: 0 0 5px #1616164d;
+    border-radius: 10px;
+    margin-top: calc(333.5px - 261px);
+    transform: scale(0.9);
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.content.board .board li h3 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    margin-top: 15px;
+}
+
+.content.board .board li p + p {
+    margin-top: 13px;
+}
+
+.content.board .row {
+    margin-left: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content.board .row .btn ul {
+    width: 300px;
+    height: 30px;
+    align-items: center;
+    justify-content: space-between;
+    display: none;
+}
+
+.content.board .row .btn ul i {
+    transition: all 0.2s;
+}
+
+.content.board .row .btn ul li {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content.board .row .btn ul li div {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.content.board .row .btn ul li:first-child:hover i,
+.content.board .row .btn ul li:last-child:hover i{
+    color: rgb(63, 168, 72);
+    text-shadow: 0 0 10px #00000056;
+    transform: scale(1.3);
+}
+
+.content.board .row .btn ul li.check div {
+    background-color: rgb(63, 168, 72);
+    box-shadow: 0 0 10px #00000056;
+}
+
+.content.board #page1:checked ~ .row .btn .page1 {
+    display: flex;
+}
+
+.content.board #page2:checked ~ .row .btn .page2 {
+    display: flex;
+}
+
+.content.board #page3:checked ~ .row .btn .page3 {
+    display: flex;
+}
+
+.content.board #page4:checked ~ .row .btn .page4 {
+    display: flex;
+}
+
+.content.board #page5:checked ~ .row .btn .page5 {
+    display: flex;
+}
+
+/* 화면 너비가 768px 이하일 때 적용되는 스타일 */
+.row {
+    width: 470px; /* 1920 - 640 = 320 * 2 */
+}
+
+body {
+    background-color: rgb(255, 250, 201);
+}
+
+.container {
+    width: 480px;
+    height: 600vh;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    /* background-color: black; */
+}
+
+header {
+    width: 480px;
+    height: 150px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    box-sizing: border-box;
+    z-index: 5;
+}
+
+header > .row {
+    margin-left: 10px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .row nav {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 480px;
+    height: 50px;
+    background-color: #e0e0e0;
+}
+
+header .row nav ul {
+    width: 480px;
+    height: 50px;
+}
+
+header .Mopen {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .Mopen i {
+    font-size: 50px;
+}
+
+header .menu {
+    position: absolute;
+    top: 0;
+    left: 480px;
+    width: 380px;
+    height: 100vh;
+    z-index: 2;
+    border-left: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    background-color: white;
+    transition: all 0.3s;
+}
+
+header .menu > ul {
+    width: 280px;
+    height: 100vh;
+    position: static;
+    display: flex;
+    flex-direction: column;
+}
+
+header .menu > ul:hover {
+    height: 100vh;
+}
+
+header .menu > ul > li {
+    width: 280px;
+    height: 70px;
+    margin-left: 0;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+header .menu > ul > li:hover {
+    height: 330px;
+}
+
+header .menu > ul > li > a {
+    height: 70px;
+    width: 280px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .menu > ul > li:hover > ul {
+    height: 270px;
+}
+
+header .menu > ul > li > ul {
+    height: 200px;
+    width: 100%;
+    left: 0px;
+}
+
+header .menu > ul > li:nth-child(2) > ul {
+    left: 0;
+} 
+
+header .menu > ul > li:nth-child(3) > ul {
+    left: 0;
+} 
+
+header .menu > ul > li:nth-child(4) > ul {
+    left: 0;
+} 
+
+header .menu > ul > li:nth-child(5) > ul {
+    left: 0;
+} 
+
+header .menu > ul > li > ul > li {
+    width: 100%;
+    height: auto;
+}
+
+header .menu > ul > li > ul > li > ul {
+    flex-direction: column;
+    height: auto;
+}
+
+header .menu > ul > li > ul > li > ul > li {
+    width: 280px;
+    height: 70px;
+}
+
+#menu:checked ~ .container > header > .menu{
+    left: 100px;
+}
+
+header .menu .dpeth2 {
+    display: none;
+}
+
+.content.board .row {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content.board .row .btn ul {
+    width: 300px;
+    height: 30px;
+    align-items: center;
+    justify-content: space-between;
+    display: none;
+}
+
+.content.board .row .btn ul i {
+    transition: all 0.2s;
+}
+
+.content.board .row .btn ul li {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content.board .row .btn ul li div {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.content.board .row .btn ul li:first-child:hover i,
+.content.board .row .btn ul li:last-child:hover i{
+    color: rgb(63, 168, 72);
+    text-shadow: 0 0 10px #00000056;
+    transform: scale(1.3);
+}
+
+.content.board .row .btn ul li.check div {
+    background-color: rgb(63, 168, 72);
+    box-shadow: 0 0 10px #00000056;
+}
+
+.content.board #page1:checked ~ .row .btn .page1 {
+    display: flex;
+}
+
+.content.board #page1:checked ~ .board {
+    margin-left: 26.25px;
+}
+
+.content.board #page1:checked ~ .board li:nth-child(1) div {
+    transform: scale(1.0);
+}
+
+.content.board #page2:checked ~ .row .btn .page2 {
+    display: flex;
+}
+
+.content.board #page2:checked ~ .board {
+    margin-left: calc(26.25px - (1 * 427.5px));
+}
+
+.content.board #page2:checked ~ .board li:nth-child(2) div {
+    transform: scale(1.0);
+}
+
+.content.board #page3:checked ~ .row .btn .page3 {
+    display: flex;
+}
+
+.content.board #page3:checked ~ .board {
+    margin-left: calc(26.25px - (2 * 427.5px));
+}
+
+.content.board #page3:checked ~ .board li:nth-child(3) div {
+    transform: scale(1.0);
+}
+
+.content.board #page4:checked ~ .row .btn .page4 {
+    display: flex;
+}
+
+.content.board #page4:checked ~ .board {
+    margin-left: calc(26.25px - (3 * 427.5px));
+}
+
+.content.board #page4:checked ~ .board li:nth-child(4) div {
+    transform: scale(1.0);
+}
+
+.content.board #page5:checked ~ .row .btn .page5 {
+    display: flex;
+}
+
+.content.board #page5:checked ~ .board {
+    margin-left: calc(26.25px - (4 * 427.5px));
+}
+
+.content.board #page5:checked ~ .board li:nth-child(5) div {
+    transform: scale(1.0);
+}
+
+.slide {
+    display: none;
+}
