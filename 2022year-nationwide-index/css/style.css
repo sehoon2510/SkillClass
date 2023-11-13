@@ -1,0 +1,821 @@
+@font-face {
+    src: url(../../제공파일/fonts/NotoSans/NotoSansKR-Black.otf);
+    font-family: "Noto-Black";
+}
+@font-face {
+    src: url(../../제공파일/fonts/NotoSans/NotoSansKR-Bold.otf);
+    font-family: "Noto-Bold";
+}
+@font-face {
+    src: url(../../제공파일/fonts/NotoSans/NotoSansKR-Light.otf);
+    font-family: "Noto-Light";
+}
+@font-face {
+    src: url(../../제공파일/fonts/NotoSans/NotoSansKR-Medium.otf);
+    font-family: "Noto-Medium";
+}
+@font-face {
+    src: url(../../제공파일/fonts/NotoSans/NotoSansKR-Regular.otf);
+    font-family: "Noto-Regular";
+}
+@font-face {
+    src: url(../../제공파일/fonts/NotoSans/NotoSansKR-Thin.otf);
+    font-family: "Noto-Thin";
+}
+@font-face {
+    src: url(../../제공파일/fonts/GmarketSansOTF/GmarketSansBold.otf);
+    font-family: "GmarketSans-Bold";
+}
+@font-face {
+    src: url(../../제공파일/fonts/GmarketSansOTF/GmarketSansLight.otf);
+    font-family: "GmarketSans-Light";
+}
+@font-face {
+    src: url(../../제공파일/fonts/GmarketSansOTF/GmarketSansMedium.otf);
+    font-family: "GmarketSans-Medium";
+}
+@font-face {
+    src: url(../../제공파일/fonts/BlackHanSans-Regular.ttf);
+    font-family: "BlackHanSans-Regular";
+}
+@font-face {
+    src: url(../../제공파일/fonts/DoHyeon-Regular.ttf);
+    font-family: "DoHyeon-Regular";
+}
+.noto-light{
+    font-family: Noto-Light;    
+}
+.noto-black{
+    font-family: Noto-Black;    
+}
+.noto-bold{
+    font-family: Noto-Bold;    
+}
+.noto-medium{
+    font-family: Noto-Medium;    
+}
+.noto-regular{
+    font-family: Noto-Regular;    
+}
+.noto-thin{
+    font-family: Noto-Thin;    
+}
+.gmarketSans-bold{
+    font-family: GmarketSans-Bold;
+}
+.gmarketSans-light{
+    font-family: GmarketSans-Light;
+}
+.gmarketSans-medium{
+    font-family: GmarketSans-Medium;
+}
+.row{
+    width: 1420px;
+    margin: 0 auto;
+    height: 100%;
+}
+a{
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+ul{
+    list-style: none;
+}
+::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 1920px;
+    height: 3070px;
+}
+.glow{
+    width: 1920px;
+    height: 710px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+}
+.glow > div{
+    width: 1920px;
+    height: 710px;
+    position: absolute;
+    background-color: #3333338e;
+    
+    backdrop-filter: blur(2px);
+}
+header{
+    width: 1920px;
+    height: 120px;
+    display: flex;
+    position: relative;
+    background: linear-gradient(to bottom, #222222b2 70%, #22222200);
+}
+header > .row{
+    display: flex;
+    align-items: center;
+}
+header > .row > a{
+    z-index: 2;
+    position: absolute;
+}
+header > .row > a > img{
+    height: 95px;
+}
+header > .row > a > .active{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.7s;
+}
+header > .row > ul:hover ~ a > .active{
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.2s;
+}
+header > .row > ul{
+    width: 700px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    margin: 0 auto;
+}
+header > .row > ul > li{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+header > .row > ul > li > a{
+    font-size: 18px;
+    color: white;
+    transition: all 0.3s;
+}
+header > .row > ul > li > ul{
+    position: absolute;
+    top: 110px;
+    width: 175px;
+    height: 0px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.35s;
+    overflow: hidden;
+}
+header > .row > ul > li > ul > li{
+    width: 175px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header > .row > ul:hover > li > a{
+    color: #333;
+}
+header > .row > ul:hover > li > ul{
+    height: 270px;
+}
+header > .row > .nav-back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1920px;
+    height: 0px;
+    background-color: white;
+    background: linear-gradient(to bottom, white 380px, rgba(255, 255, 255, 0));
+    z-index: 1;
+    transition: all 0.5s;
+}
+header > .row > ul:hover ~ .nav-back{
+    height: 400px;
+}
+/* -------- 유저 인터페이스 -------- */
+.user_intarface{
+    position: absolute;
+    left: 1530px;
+    top: 42.5px;
+    width: 130px;
+    height: 35px;
+    background-color: #222;
+    display: flex;
+    border-radius: 20px;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+}
+.user_intarface > div{
+    height: 20px;
+    width: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user_intarface > div:nth-child(2){
+    border-left: 1px solid white;
+}
+.user_intarface > div:nth-child(1){
+    border-right: 1px solid white;
+}
+.user_intarface > div > a{
+    color: white;
+    font-size: 13px;
+}
+/* ------------------------------------- */
+section{
+    width: 1920px;
+    height: 2050px;
+}
+section > .row > .visual{
+    width: 1420px;
+    height: 450px;
+    border-radius: 25px;
+    overflow-y: scroll;
+    scroll-snap-type:y mandatory;
+    margin: 0;
+    padding: 0;
+    top: 180px;
+    left: 250px;
+    transition: all 0.5s;
+    position: absolute;
+}
+section > .row > .visual > li{
+    width: 1420px;
+    height: 450px;
+    overflow: hidden;
+    scroll-snap-align: start;
+    scroll-snap-stop: end;
+    transition: all 0.5s;
+    position: relative;
+}
+section > .row > .visual > li > img{
+    width: 1422px;
+    margin-left: -1px;
+    margin-top: -1px;
+}
+section > .row > .visual > li > .scroll{
+    /* z-index: 1; */
+    top: 20px;
+    left: 80px;
+    position: absolute;
+}
+section > .row > .visual > li > .scroll > p{
+    font-size: 34px;
+    color: #222;
+    color: rgb(255, 255, 255); text-shadow: 0 0 5px black;
+}
+section > .row > .slid{
+    width: 1920px;
+    height: 500px;
+    display: flex;
+    margin-top: 600px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-size: cover;
+    margin-left: -250px;
+    position: relative;
+}
+section > .row > .slid > .suggestion-text{
+    width: 510px;
+    height: 400px;
+    z-index: 1;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+section > .row > .slid > .suggestion-text > p:nth-child(1){
+    font-size: 18px;
+    margin-top: 40px;
+    margin-left: 20px;
+    color: #558d6a;
+}
+section > .row > .slid > .suggestion-text > p:nth-child(2){
+    font-size: 18px;
+    margin-left: 20px;
+    color: #558d6a;
+}
+section > .row > .slid > .suggestion-text > p:nth-child(3) > span{
+    color: #0f7a0b;
+}
+section > .row > .slid > .suggestion-text > p:nth-child(3){
+    font-size: 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+section > .row > .slid > .suggestion-text > a{
+    width: 270px;
+    height: 70px;
+    border-bottom: 2px solid #222;
+    margin-left: 20px;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+section > .row > .slid > .suggestion-text > a > p{
+    font-size: 20px;
+    color: #0b5a04;
+    transition: all 0.3s;
+}
+section > .row > .slid > .suggestion-text > a > i{
+    margin-top: 3.6px;
+    transition: all 0.3s;
+    transform: translateX(-20px);
+}
+section > .row > .slid > .suggestion-text > a:hover > p{
+    transform: translateY(-5px);
+}
+section > .row > .slid > .suggestion-text > a:hover > i{
+    transform: translateX(5px);
+    color: #0b5a04;
+}
+section > .row > .slid > .suggestion{
+    width: 890px;
+    height: 400px;
+    overflow: hidden;
+    float: right;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+section > .row > .slid > .suggestion > ul{
+    width: 4960px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    margin-left: -540px;
+    animation: suggestionsilad 10s infinite;
+}
+@keyframes suggestionsilad {
+    0%{
+        /* 5초동안 작아짐 */
+        margin-left: -620px;
+    }/* 5초동안 이동 */
+    12.5%{
+        margin-left: -1240px;/* 슬라이드 5초 */
+    }
+    25%{
+        margin-left: -1240px;/* 대기 5초 */
+    }
+    37.5%{
+        margin-left: -1860px;/* 슬라이드 5초 */
+    }
+    50%{
+        margin-left: -1860px;
+    }
+    62.5%{
+        margin-left: -2480px;
+    }
+    75%{
+        margin-left: -2480px;
+    }
+    87.5%{
+        margin-left: -3100px;
+    }
+    100%{
+        margin-left: -3100px;
+    }
+}
+section > .row > .slid > .suggestion > ul > li{
+    width: 620px;
+    height: 400px;
+    position: relative;
+    transform: scale(0.9);
+    animation: suggestion 5s infinite; 
+    border-radius: 10px;
+    overflow: hidden;
+}
+section > .row > .slid > .suggestion > ul > li:nth-child(2n){
+    animation: suggestion2n 5s infinite;
+}
+@keyframes suggestion{
+    0%{
+        transform: scale(0.7);
+        margin-top: 100px;
+    }/* 기본 */
+    25%{
+        transform: scale(0.9);
+        margin-top: 0px;
+    }/* 5초동안 커지기 */
+    50%{
+        transform: scale(0.9);
+        margin-top: 0px;
+    }/* 5초동안 유지 */
+    75%{
+        transform: scale(0.7);
+        margin-top: 100px;
+    }/* 5초동안 작아지기 */
+    100%{
+        transform: scale(0.7);
+        margin-top: 100px;
+    }/* 기본 */
+}
+@keyframes suggestion2n{
+    0%{
+        transform: scale(0.9);
+        margin-top: 0px;
+    }/* 5초동안 커지기 */
+    25%{
+        transform: scale(0.7);
+        margin-top: 100px;
+    }
+    50%{
+        transform: scale(0.7);
+        margin-top: 100px;
+    }
+    75%{
+        transform: scale(0.9);
+        margin-top: 0px;
+    }
+    100%{
+        transform: scale(0.9);
+        margin-top: 0px;
+    }/* 5초동안 커지기 */
+}
+section > .row > .slid > .suggestion > ul > li > div:first-child{
+    width: 610px;
+    height: 400px;
+    background-color: blue;
+    overflow: hidden;
+    border-radius: 10px;
+}
+section > .row > .slid > .suggestion > ul > li > div > img{
+    width: 610px;
+}
+section > .row > .slid > .suggestion > ul > li > .text{
+    width: 340px;
+    height: 200px;
+    background-color: #1baa3fd2;
+    z-index: 1;
+    top: 177px;
+    left: 280px;
+    position: absolute;
+    animation: suggestion3 5s infinite;
+}
+section > .row > .slid > .suggestion > ul > li:nth-child(2n) > .text{
+    animation: suggestion4 5s infinite;
+}
+@keyframes suggestion3{
+    0%{
+        opacity: 0;
+        transform: translateY(300px);
+    }
+    25%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    50%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    75%{
+        opacity: 0;
+        transform: translateY(300px);
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(300px);
+    }
+}
+@keyframes suggestion4{
+    0%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    25%{
+        opacity: 0;
+        transform: translateY(300px);
+    }
+    50%{
+        opacity: 0;
+        transform: translateY(300px);
+    }
+    75%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+section > .row > .slid > .suggestion > ul > li > .text > p{
+    font-size: 26px;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    color: white;
+}
+section > .row > .slid > .suggestion > ul > li > .text > div{
+    width: 380px;
+    display: flex;
+    margin-left: 29px;
+    height: 16px;
+    margin-bottom: 5px;
+}
+section > .row > .slid > .suggestion > ul > li > .text > div:nth-child(2){
+    width: 380px;
+    display: flex;
+    margin-left: 31px;
+}
+section > .row > .slid > .suggestion > ul > li > .text > div:nth-child(3){
+    width: 380px;
+    display: flex;
+}
+section > .row > .slid > .suggestion > ul > li > .text > div:nth-child(4){
+    width: 380px;
+    display: flex;
+}
+section > .row > .slid > .suggestion > ul > li > .text > div > p{
+    line-height: 15px;
+    margin-left: 15px;
+    font-size: 16px;
+    color: white;
+}
+section > .row > .slid > .suggestion > ul > li > .text > div:nth-child(4) > p{
+    margin-left: 13px;
+}
+section > .row > .slid > .suggestion > ul > li > .text > div > i{
+    color: white;
+    font-size: 16px;
+}
+section > .row > .slid > .suggestion > ul > li > .text > div:last-child{
+    margin-top: 20px;
+}
+section > .row > .gallery{
+    width: 1420px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 200px;
+}
+section > .row > .gallery > .text{
+    width: 425px;
+    margin-right: 15px;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+section > .row > .gallery > .text > p:nth-child(1){
+    font-size: 18px;
+    margin-top: 80px;
+    margin-right: 20px;
+    color: #558d6a;
+}
+section > .row > .gallery > .text > p:nth-child(2){
+    font-size: 18px;
+    margin-right: 20px;
+    color: #558d6a;
+}
+section > .row > .gallery > .text > p:nth-child(3) > span{
+    color: #0f7a0b;
+}
+section > .row > .gallery > .text > p:nth-child(3){
+    font-size: 50px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+section > .row > .gallery > .text > div{
+    width: 270px;
+    height: 70px;
+    border-bottom: 2px solid #222;
+    margin-left: 20px;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+section > .row > .gallery > .text > div > p{
+    font-size: 20px;
+    color: #0b5a04;
+    transition: all 0.3s;
+}
+section > .row > .gallery > .text > div > i{
+    margin-top: 3.6px;
+    transition: all 0.3s;
+}
+section > .row > .gallery > .img{
+    width: 950px;
+    height: 480px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    border-radius: 25px;
+    position: relative;
+}
+section > .row > .gallery > .img > .back{
+    position: absolute;
+    top: 0;
+    width: 950px;
+    height: 480px;
+    z-index: 1;
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: back 10s forwards;
+}
+section > .row > .gallery > .img > .back > p{
+    font-size: 34px;
+    color: white;
+}
+@keyframes back {
+    0%{
+        background-color: #333333bb;
+    }
+    90%{
+        background-color: #333333bb;
+    }
+    99%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+        z-index: -2;
+    }
+}
+section > .row > .gallery > .img > ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 4900px;
+    height: 480px;
+    animation: gallery 10s infinite;
+    animation-delay: 5s;
+}
+section > .row > .gallery > .img > ul:hover{
+    animation-play-state: paused;
+}
+@keyframes gallery{
+    0%{
+        margin-left: 0;
+    }
+    12.5%{
+        margin-left: -970px;
+    }
+    25%{
+        margin-left: -970px;
+    }
+    37.5%{
+        margin-left: -1940px;
+    }
+    50%{
+        margin-left: -1940px;
+    }
+    62.5%{
+        margin-left: -2910px;
+    }
+    75%{
+        margin-left: -2910px;
+    }
+    87.5%{
+        margin-left: -3880px;
+    }
+    100%{
+        margin-left: -3880px;
+    }
+}
+@keyframes stop{
+    0%{
+        
+    }
+}
+section > .row > .gallery > .img > ul > li{
+    width: 950px;
+    height: 480px;
+    overflow: hidden;
+    background-color: white;
+    margin-right: 20px;
+    border-radius: 25px;
+    position: relative;
+}
+section > .row > .gallery > .img > ul > li > img{
+    width: 980px;
+}
+section > .row > .promotion{
+    width: 1420px;
+    height: 400px;
+    margin-top: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section > .row > .promotion > ul{
+    width: 1400px;
+    height: 380px;
+    background-color: white;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+section > .row > .promotion > ul > li{
+    height: 370px;
+    width: 250px;
+    overflow: hidden;
+    border-radius: 25px;
+    border: 1px solid #dadada;
+}
+section > .row > .promotion > ul > li > .img{
+    width: 250px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+section > .row > .promotion > ul > li > .img > .img-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 200px;
+    width: 125px;
+    box-sizing: border-box;
+}
+section > .row > .promotion > ul > li > .img > .img-list{
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    border-radius: 25px;
+}
+section > .row > .promotion > ul > li > .img > .img-list:first-child{
+    border-right: 1px solid white;
+    border-radius: 0 25px 25px 0;
+}
+section > .row > .promotion > ul > li > .img > .img-list:last-child{
+    border-left: 1px solid white;
+    border-radius: 25px 0 0 25px;
+}
+section > .row > .promotion > ul > li > .img > .img-list.only{
+    width: 250px;
+    height: 200px;
+    border-radius: 0;
+}
+section > .row > .promotion > ul > li > .img > .img-list > img{
+    width: 350px;
+}
+section > .row > .promotion > ul > li > .text{
+    height: 170px;
+    width: 250px;
+}
+section > .row > .promotion > ul > li > .text > p{
+    margin-left: 10px;
+}
+section > .row > .promotion > ul > li > .text > p:first-child{
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+section > .row > .promotion > ul > li > .text > p:nth-child(2){
+    font-size: 16px;
+}
+section > .row > .promotion > ul > li > .text > ul{
+    margin-left: 17px;
+    margin-top: 3px;
+}
+section > .row > .promotion > ul > li > .text > ul > li{
+    font-size: 14px;
+}
+footer{
+    width: 1920px;
+    height: 300px;
+    background-color: #333333;
+}
+footer > .row > img{
+    height: 100px;
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+footer > .row > p{
+    color: rgb(187, 187, 187);
+    font-size: 18px;
+}
+footer > .row > ul > li{
+    color: rgb(187, 187, 187);
+    font-size: 18px;
+}
+.container.sub1{
+    height: 1500px;
+    background-color: red;
+}
+section.sub1{
+    height: 1080px;
+    background-color: blue;
+}
