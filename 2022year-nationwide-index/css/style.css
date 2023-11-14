@@ -1,45 +1,45 @@
 @font-face {
-    src: url(../../제공파일/fonts/NotoSans/NotoSansKR-Black.otf);
+    src: url(../font/NotoSans/NotoSansKR-Black.otf);
     font-family: "Noto-Black";
 }
 @font-face {
-    src: url(../../제공파일/fonts/NotoSans/NotoSansKR-Bold.otf);
+    src: url(../font/NotoSans/NotoSansKR-Bold.otf);
     font-family: "Noto-Bold";
 }
 @font-face {
-    src: url(../../제공파일/fonts/NotoSans/NotoSansKR-Light.otf);
+    src: url(../font/NotoSans/NotoSansKR-Light.otf);
     font-family: "Noto-Light";
 }
 @font-face {
-    src: url(../../제공파일/fonts/NotoSans/NotoSansKR-Medium.otf);
+    src: url(../font/NotoSans/NotoSansKR-Medium.otf);
     font-family: "Noto-Medium";
 }
 @font-face {
-    src: url(../../제공파일/fonts/NotoSans/NotoSansKR-Regular.otf);
+    src: url(../font/NotoSans/NotoSansKR-Regular.otf);
     font-family: "Noto-Regular";
 }
 @font-face {
-    src: url(../../제공파일/fonts/NotoSans/NotoSansKR-Thin.otf);
+    src: url(../font/NotoSans/NotoSansKR-Thin.otf);
     font-family: "Noto-Thin";
 }
 @font-face {
-    src: url(../../제공파일/fonts/GmarketSansOTF/GmarketSansBold.otf);
+    src: url(../font/GmarketSansOTF/GmarketSansBold.otf);
     font-family: "GmarketSans-Bold";
 }
 @font-face {
-    src: url(../../제공파일/fonts/GmarketSansOTF/GmarketSansLight.otf);
+    src: url(../font/GmarketSansOTF/GmarketSansLight.otf);
     font-family: "GmarketSans-Light";
 }
 @font-face {
-    src: url(../../제공파일/fonts/GmarketSansOTF/GmarketSansMedium.otf);
+    src: url(../font/GmarketSansOTF/GmarketSansMedium.otf);
     font-family: "GmarketSans-Medium";
 }
 @font-face {
-    src: url(../../제공파일/fonts/BlackHanSans-Regular.ttf);
+    src: url(../font/BlackHanSans-Regular.ttf);
     font-family: "BlackHanSans-Regular";
 }
 @font-face {
-    src: url(../../제공파일/fonts/DoHyeon-Regular.ttf);
+    src: url(../font/DoHyeon-Regular.ttf);
     font-family: "DoHyeon-Regular";
 }
 .noto-light{
