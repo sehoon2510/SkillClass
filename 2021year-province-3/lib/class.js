@@ -61,7 +61,7 @@ class History
         this.StorageLoad();
         this.drow();
 
-        // this.event();
+        this.event();
     }
 
     drow() {
@@ -95,10 +95,11 @@ class History
 
     event() {
         this.Tabs.addEventListener("click", e => {
-            if(!e.target.classList.contains("history__tab") && e.target.classList.contains("active")) return;
+            if(!e.target.classList.contains("tab__item") || e.target.classList.contains("active")) return;
             this.active = e.target.dataset.year;
 
             this.StorageSave();
+            this.drow();
         });
 
         this.addBtn.addEventListener("click", e => {
